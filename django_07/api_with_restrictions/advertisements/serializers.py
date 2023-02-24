@@ -48,6 +48,8 @@ class AdvertisementSerializer(serializers.ModelSerializer):
         if count_opened <= 11:
             return data
         else:
+            if data['status'] == 'CLOSED':
+                return data
             raise serializers.ValidationError(
                 'More than 10 opened advertisement'
             )

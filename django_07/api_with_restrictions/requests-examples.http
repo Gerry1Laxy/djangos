@@ -34,7 +34,7 @@ Authorization: Token {{token}}
 ###
 
 # попытка поменять объявление
-PATCH {{baseUrl}}/advertisements/12/
+PATCH {{baseUrl}}/advertisements/14/
 Content-Type: application/json
 Authorization: Token {{token2}}
 
